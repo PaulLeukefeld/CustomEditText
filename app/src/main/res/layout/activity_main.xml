@@ -6,13 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.paulleukefeld.customedittext.EditTextWithClear
+        android:id="@+id/my_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:inputType="textCapSentences"
+        android:layout_gravity="start"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/last_name"
+        android:autofillHints="">
+    </com.paulleukefeld.customedittext.EditTextWithClear>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
